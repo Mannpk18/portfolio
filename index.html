@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mann Kaniyawala - Software Engineer</title>
+<meta name="description" content="Mann Kaniyawala - software engineer working across research, production systems, and applied AI. McMaster University, CGI, NSERC iUSRA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="nav__mark" aria-label="Mann Kaniyawala, home">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M3 27V7L10 17L17 7V27" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+      <path d="M22 7L31 7L22 27L31 27" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <nav class="nav__links" aria-label="Section">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav__status">
+    <span class="dot" aria-hidden="true"></span>
+    STATUS: OPEN TO WORK
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__label">PORTFOLIO · 2026 </div>
+    <h1 class="hero__title">
+      <span class="line">MANN</span>
+      <span class="line line--accent">KANIYAWALA</span>
+    </h1>
+    <p class="hero__role">Software engineer working across <span class="u">research</span>, <span class="u">production systems</span>, and <span class="u">applied AI</span>.</p>
+    <div class="hero__meta">
+      <span>McMaster University - Hon. CS (Co-op), 2027</span>
+      <span class="sep">/</span>
+      <span>Hamilton, ON</span>
+    </div>
+    <a href="#about" class="scroll-cue" data-cue>
+      <span>ENTER THE WORK</span>
+      <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M7 1V19M7 19L1 13M7 19L13 13" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--cream" id="about" data-reveal>
+    <div class="eyebrow">ABOUT / 01</div>
+    <div class="split">
+      <h2 class="split__head">Trained on real systems, not just coursework.</h2>
+      <div class="split__body">
+        <p>I'm a fourth-year Honours Computer Science Co-op student at McMaster University, graduating in 2027. My work sits at the intersection of applied machine learning and the infrastructure that keeps systems running - I've spent as much time debugging production logs as I have training models.</p>
+        <p>Alongside coursework, I hold an NSERC Undergraduate Student Research Award, conducting computational bioinformatics research under Dr. Neerja Mhaskar, where I build ML pipelines to analyze large-scale DNA reads. Off-screen, I play intramural cricket and badminton at McMaster.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--black" id="experience" data-reveal>
+    <div class="eyebrow eyebrow--light">EXPERIENCE / 02</div>
+    <h2 class="section__title section__title--light">Where the work has lived.</h2>
+
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__date">AUG 2026 - DEC 2026</div>
+        <div class="timeline__body">
+          <h3>Production Support Co-op</h3>
+          <p class="timeline__org">CGI · 250 Yonge Street, Toronto</p>
+          <p>Joining CGI's production support team to work on incident triage, monitoring, and root-cause analysis for live systems - following an offer process that included technical interviews and a verified background check.</p>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__date">MAY 2025 - AUG 2025</div>
+        <div class="timeline__body">
+          <h3>NSERC iUSRA Researcher</h3>
+          <p class="timeline__org">McMaster University - Mhaskar Lab</p>
+          <p>Conducting computational bioinformatics research under Dr. Neerja Mhaskar, building ML pipelines (autoencoders, CNNs) to analyze large-scale DNA reads.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- LIVE METRICS TERMINAL -->
+  <section class="section section--black section--tight" data-reveal>
+    <div class="eyebrow eyebrow--light">LIVE SYSTEM / 03</div>
+    <h2 class="section__title section__title--light">Metrics from shipped work, not slides.</h2>
+
+    <div class="terminal" role="img" aria-label="Terminal panel cycling through verified project metrics">
+      <div class="terminal__bar">
+        <div class="terminal__dots"><span></span><span></span><span></span></div>
+        <div class="terminal__path">~/mann/build-status — zsh</div>
+        <div class="terminal__cursor-label" id="clock">--:--:--</div>
+      </div>
+      <div class="terminal__body" id="terminalBody" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--cream" id="work" data-reveal>
+    <div class="eyebrow">SELECTED WORK / 04</div>
+    <h2 class="section__title">Five systems, shipped and measured.</h2>
+
+    <div class="cards">
+      <article class="card card--progress">
+        <div class="card__num">01</div>
+        <h3>FilingLens <span class="tag">IN PROGRESS</span></h3>
+        <p class="card__stack">LangGraph · Multi-agent</p>
+        <p class="card__desc">A multi-agent system that analyzes SEC EDGAR filings and XBRL data, coordinating specialized agents across the extraction and analysis pipeline.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__num">02</div>
+        <h3>Production Monitoring &amp; Log Analysis Toolkit</h3>
+        <p class="card__stack">Python · Bash</p>
+        <p class="card__desc">Automated log analysis tooling that surfaces incidents earlier and strips manual steps out of triage workflows.</p>
+        <ul class="card__stats">
+          <li><strong>+11.5%</strong> issue detection</li>
+          <li><strong>−65.1%</strong> triage items</li>
+          <li><strong>−85.7%</strong> manual steps</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__num">03</div>
+        <h3>IncidentSim</h3>
+        <p class="card__stack">Python · SQL · Bash · Flask</p>
+        <p class="card__desc">An incident triage simulator for practicing production-support workflows against realistic, generated incident data.</p>
+        <ul class="card__stats">
+          <li><strong>27</strong> tests</li>
+        </ul>
+        <a class="card__link" href="https://github.com/Mannpk18/incidentsim" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card__num">04</div>
+        <h3>Fleet Analytics Dashboard</h3>
+        <p class="card__stack">SQL · Python</p>
+        <p class="card__desc">A telemetry analytics dashboard for a 22-vehicle fleet, optimized with covering indexes for faster query response.</p>
+        <ul class="card__stats">
+          <li><strong>22</strong> vehicles</li>
+          <li><strong>~9,300</strong> telemetry readings</li>
+          <li><strong>~27%</strong> query improvement</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <blockquote class="pullquote" data-reveal>
+    <p>I build tools meant to scale - systems designed to grow, not just demos built to impress.</p>
+  </blockquote>
+
+  <!-- RESEARCH -->
+  <section class="section section--black" id="research" data-reveal>
+    <div class="eyebrow eyebrow--light">RESEARCH / 05</div>
+    <div class="split">
+      <h2 class="split__head split__head--light">Bioinformatics, at the scale of a genome.</h2>
+      <div class="split__body split__body--light">
+        <p>As an NSERC iUSRA recipient, I work under Dr. Neerja Mhaskar on computational bioinformatics - designing ML pipelines that use autoencoders and CNNs to analyze large-scale DNA reads.</p>
+        <p>The work sits closer to signal processing than typical web development: high-dimensional biological data, long training cycles, and results that need to hold up against a domain expert's scrutiny, not just a test suite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--cream" data-reveal>
+    <div class="eyebrow">SKILLS &amp; CERTIFICATIONS / 06</div>
+    <h2 class="section__title">The toolkit, grouped.</h2>
+
+    <div class="skills-grid">
+      <div class="skills-col">
+        <h3>Languages &amp; Systems</h3>
+        <ul><li>Python</li><li>SQL</li><li>Linux / Bash</li><li>Git</li><li>Docker</li></ul>
+      </div>
+      <div class="skills-col">
+        <h3>ML / AI</h3>
+        <ul><li>LangChain</li><li>LangGraph</li><li>FAISS</li><li>WatsonX</li><li>Autoencoders &amp; CNNs</li></ul>
+      </div>
+      <div class="skills-col">
+        <h3>Web &amp; Backend</h3>
+        <ul><li>Flask</li><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+      </div>
+      <div class="skills-col">
+        <h3>Certifications</h3>
+        <ul><li>PyTorch &amp; Deep Learning — Linux Foundation</li><li>Fundamentals of AI &amp; ML — AWS</li><li>Software Engineer Cert. — HackerRank</li><li>Developing Secure Software — Linux Foundation</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact" data-reveal>
+    <div class="eyebrow eyebrow--light">CONTACT / 07</div>
+    <h2 class="footer__title">Building something worth<br>a production incident? <span class="accent">Let's talk.</span></h2>
+
+    <div class="footer__row">
+      <a class="footer__email" href="mailto:[EMAIL]">[EMAIL]</a>
+      <div class="footer__links">
+        <a href="https://github.com/Mannpk18" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/mann-kaniyawala" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Mann Kaniyawala</span>
+      <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑ TOP</button>
+    </div>
+  </footer>
+
+</main>
+
+<div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
