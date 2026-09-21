@@ -85,6 +85,10 @@
   var terminalBody = document.getElementById("terminalBody");
 
   var logLines = [
+    { k: "$ run filinglens --eval golden-set", v: "", cls: "" },
+    { k: "  numeric_hallucination_rate", v: "0.0% (from 25.0%)", cls: "metric" },
+    { k: "  numeric_accuracy", v: "100%", cls: "metric" },
+    { k: "  tests", v: "26/26 passing", cls: "ok" },
     { k: "$ run log-toolkit --report", v: "", cls: "" },
     { k: "  additional_issue_detection", v: "+11.5%", cls: "metric" },
     { k: "  triage_items", v: "-65.1%", cls: "metric" },
