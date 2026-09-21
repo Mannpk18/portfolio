@@ -79,7 +79,7 @@
       <li class="timeline__item">
         <div class="timeline__date">AUG 2026 - DEC 2026</div>
         <div class="timeline__body">
-          <h3>Application Support Analyst Co-op</h3>
+          <h3>Production Support Co-op</h3>
           <p class="timeline__org">CGI · 250 Yonge Street, Toronto</p>
           <p>Joining CGI's production support team to work on incident triage, monitoring, and root-cause analysis for live systems - following an offer process that included technical interviews and a verified background check.</p>
         </div>
@@ -119,8 +119,14 @@
       <article class="card card--progress">
         <div class="card__num">01</div>
         <h3>FilingLens <span class="tag">IN PROGRESS</span></h3>
-        <p class="card__stack">LangGraph · Multi-agent</p>
-        <p class="card__desc">A multi-agent system that analyzes SEC EDGAR filings and XBRL data, coordinating specialized agents across the extraction and analysis pipeline.</p>
+        <p class="card__stack">LangGraph · Anthropic API · Ollama</p>
+        <p class="card__desc">A 6-agent LangGraph pipeline that analyzes SEC EDGAR filings and XBRL data, with a verifier-gated retry loop and pluggable Anthropic API / local Llama 3.1 backends.</p>
+        <ul class="card__stats">
+          <li><strong>6</strong> agents, LangGraph pipeline</li>
+          <li><strong>26</strong> tests, all passing</li>
+          <li><strong>−25pp</strong> hallucination rate</li>
+        </ul>
+        <a class="card__link" href="https://github.com/Mannpk18/filinglens" target="_blank" rel="noopener">View on GitHub ↗</a>
       </article>
 
       <article class="card">
