@@ -161,7 +161,19 @@
       terminalBody.appendChild(makeTerminalRow(bootLine, bootI * 0.05 + "s"));
     }
     moveCursorTo(terminalBody.lastElementChild);
-    setInterval(appendTerminalLine, 900);
+
+    // Only tick while the panel is on screen, so it never changes anything
+    // while the visitor is reading another section.
+    var terminalTimer = null;
+    function startTerminal() { if (!terminalTimer) terminalTimer = setInterval(appendTerminalLine, 900); }
+    function stopTerminal() { clearInterval(terminalTimer); terminalTimer = null; }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        entries[0].isIntersecting ? startTerminal() : stopTerminal();
+      }).observe(terminalBody);
+    } else {
+      startTerminal();
+    }
   }
 
   /* ---------------------------------------------------------
