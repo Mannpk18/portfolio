@@ -280,9 +280,19 @@ h1,h2,h3,p{ margin: 0; }
   overflow: hidden;
   background-image: linear-gradient(var(--line-on-black) 1px, transparent 1px);
   background-size: 100% 34px;
+  /* Newest line sits at the bottom; nothing inside can move the page. */
+  display: flex; flex-direction: column; justify-content: flex-end;
+  overflow-anchor: none;
+  contain: layout paint;
 }
-.terminal__line{ display: flex; gap: 12px; white-space: pre-wrap; opacity: 0; animation: type-in 0.4s forwards; }
-.terminal__line .k{ color: var(--muted-on-black); min-width: 190px; }
+.terminal__line{ display: flex; gap: 12px; flex: none; white-space: nowrap; opacity: 0; animation: type-in 0.4s forwards; }
+.terminal__line .k{ color: var(--muted-on-black); min-width: 190px; flex: none; }
+.terminal__line .v{ overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 640px){
+  .terminal__body{ font-size: 12px; padding: 22px 16px 26px; }
+  .terminal__line{ gap: 8px; }
+  .terminal__line .k{ min-width: 0; }
+}
 .terminal__line .v{ color: var(--cream); }
 .terminal__line .ok{ color: #4ADE80; }
 .terminal__line .metric{ color: var(--orange); font-weight: 600; }
