@@ -46,7 +46,7 @@
     </h1>
     <p class="hero__role">Software engineer working across <span class="u">research</span>, <span class="u">production systems</span>, and <span class="u">applied AI</span>.</p>
     <div class="hero__meta">
-      <span>McMaster University - Hon. CS (Co-op), 2027</span>
+      <span>McMaster University - Hon. CS (Co-op), 2028</span>
       <span class="sep">/</span>
       <span>Hamilton, ON</span>
     </div>
@@ -64,8 +64,8 @@
     <div class="split">
       <h2 class="split__head">Trained on real systems, not just coursework.</h2>
       <div class="split__body">
-        <p>I'm a fourth-year Honours Computer Science Co-op student at McMaster University, graduating in 2027. My work sits at the intersection of applied machine learning and the infrastructure that keeps systems running - I've spent as much time debugging production logs as I have training models.</p>
-        <p>Alongside coursework, I hold an NSERC Undergraduate Student Research Award, conducting computational bioinformatics research under Dr. Neerja Mhaskar, where I build ML pipelines to analyze large-scale DNA reads. Off-screen, I play intramural cricket and badminton at McMaster.</p>
+        <p>I'm a fourth-year Honours Computer Science Co-op student at McMaster University, graduating in 2028. My work sits at the intersection of applied machine learning and the infrastructure that keeps systems running - I've spent as much time working production incidents as I have training models.</p>
+        <p>Right now I'm an Application Support Analyst co-op at CGI on the CIBC account, and I lead a six-person NLP team at the McMaster AI Society. Before that, an NSERC Undergraduate Student Research Award took me into computational bioinformatics under Dr. Neerja Mhaskar, building ML pipelines for DNA sequencing data. Off-screen, I play intramural cricket and badminton at McMaster.</p>
       </div>
     </div>
   </section>
@@ -77,11 +77,19 @@
 
     <ol class="timeline">
       <li class="timeline__item">
+        <div class="timeline__date">OCT 2026 - PRESENT</div>
+        <div class="timeline__body">
+          <h3>Team Lead</h3>
+          <p class="timeline__org">McMaster AI Society (MacAI) · with Dr. Milad Alshomary</p>
+          <p>Interviewed 8 candidates and built a 6-person team to create web-based software for LLM prompt optimization, split across research, backend and frontend workstreams. We meet Dr. Alshomary weekly, are aiming for a working demo by January 2027, and will present at CUCAI 2027.</p>
+        </div>
+      </li>
+      <li class="timeline__item">
         <div class="timeline__date">AUG 2026 - DEC 2026</div>
         <div class="timeline__body">
-          <h3>Production Support Co-op</h3>
-          <p class="timeline__org">CGI · 250 Yonge Street, Toronto</p>
-          <p>Joining CGI's production support team to work on incident triage, monitoring, and root-cause analysis for live systems - following an offer process that included technical interviews and a verified background check.</p>
+          <h3>Application Support Analyst Co-op</h3>
+          <p class="timeline__org">CGI · CIBC account, Change Management Office · Toronto</p>
+          <p>Handle work orders, incidents and change requests (CRQs) in Helix ITSM, taking most CRQs end to end without engineering help. Diagnosed 50+ incidents from ticket history, escalate findings to engineers in daily scrums, send weekly WO and INC reports to the offshore team and stakeholders, and automate client approval steps with Selenium and NeoLoad.</p>
         </div>
       </li>
       <li class="timeline__item">
@@ -89,7 +97,7 @@
         <div class="timeline__body">
           <h3>NSERC iUSRA Researcher</h3>
           <p class="timeline__org">McMaster University - Mhaskar Lab</p>
-          <p>Conducting computational bioinformatics research under Dr. Neerja Mhaskar, building ML pipelines (autoencoders, CNNs) to analyze large-scale DNA reads.</p>
+          <p>Computational bioinformatics research under Dr. Neerja Mhaskar. Cleaned unstructured DNA sequencing data (10,000+ records), built autoencoder and CNN models in PyTorch, and presented the results to a partner team.</p>
         </div>
       </li>
     </ol>
@@ -113,12 +121,12 @@
   <!-- PROJECTS -->
   <section class="section section--cream" id="work" data-reveal>
     <div class="eyebrow">SELECTED WORK / 04</div>
-    <h2 class="section__title">Five systems, shipped and measured.</h2>
+    <h2 class="section__title">Five systems, built and measured.</h2>
 
     <div class="cards">
       <article class="card card--progress">
         <div class="card__num">01</div>
-        <h3>FilingLens <span class="tag">IN PROGRESS</span></h3>
+        <h3>FilingLens</h3>
         <p class="card__stack">LangGraph · Anthropic API · Ollama</p>
         <p class="card__desc">A 6-agent LangGraph pipeline that analyzes SEC EDGAR filings and XBRL data, with a verifier-gated retry loop and pluggable Anthropic API / local Llama 3.1 backends.</p>
         <ul class="card__stats">
@@ -129,8 +137,15 @@
         <a class="card__link" href="https://github.com/Mannpk18/filinglens" target="_blank" rel="noopener">View on GitHub ↗</a>
       </article>
 
-      <article class="card">
+      <article class="card card--progress">
         <div class="card__num">02</div>
+        <h3>ScamShield <span class="tag">IN PROGRESS</span></h3>
+        <p class="card__stack">Python · OCR · Multimodal ML · Agents</p>
+        <p class="card__desc">A multimodal scam and deepfake checker: reads screenshots with OCR and classifies phishing text, flags synthetic voices and AI-generated images, then an agent merges the signals into one risk verdict.</p>
+      </article>
+
+      <article class="card">
+        <div class="card__num">03</div>
         <h3>Production Monitoring &amp; Log Analysis Toolkit</h3>
         <p class="card__stack">Python · Bash</p>
         <p class="card__desc">Automated log analysis tooling that surfaces incidents earlier and strips manual steps out of triage workflows.</p>
@@ -142,7 +157,7 @@
       </article>
 
       <article class="card">
-        <div class="card__num">03</div>
+        <div class="card__num">04</div>
         <h3>IncidentSim</h3>
         <p class="card__stack">Python · SQL · Bash · Flask</p>
         <p class="card__desc">An incident triage simulator for practicing production-support workflows against realistic, generated incident data.</p>
@@ -153,7 +168,7 @@
       </article>
 
       <article class="card">
-        <div class="card__num">04</div>
+        <div class="card__num">05</div>
         <h3>Fleet Analytics Dashboard</h3>
         <p class="card__stack">SQL · Python</p>
         <p class="card__desc">A telemetry analytics dashboard for a 22-vehicle fleet, optimized with covering indexes for faster query response.</p>
@@ -177,7 +192,7 @@
     <div class="split">
       <h2 class="split__head split__head--light">Bioinformatics, at the scale of a genome.</h2>
       <div class="split__body split__body--light">
-        <p>As an NSERC iUSRA recipient, I work under Dr. Neerja Mhaskar on computational bioinformatics - designing ML pipelines that use autoencoders and CNNs to analyze large-scale DNA reads.</p>
+        <p>As an NSERC iUSRA recipient (May to August 2025), I worked under Dr. Neerja Mhaskar on computational bioinformatics - designing ML pipelines that used autoencoders and CNNs, built in PyTorch, to analyze DNA sequencing data.</p>
         <p>The work sits closer to signal processing than typical web development: high-dimensional biological data, long training cycles, and results that need to hold up against a domain expert's scrutiny, not just a test suite.</p>
       </div>
     </div>
@@ -203,7 +218,7 @@
       </div>
       <div class="skills-col">
         <h3>Certifications</h3>
-        <ul><li>PyTorch &amp; Deep Learning — Linux Foundation</li><li>Fundamentals of AI &amp; ML — AWS</li><li>Software Engineer Cert. — HackerRank</li><li>Developing Secure Software — Linux Foundation</li></ul>
+        <ul><li>Building with the Claude API — Anthropic</li><li>PyTorch &amp; Deep Learning — Linux Foundation</li><li>Fundamentals of AI &amp; ML — AWS</li><li>Software Engineer Cert. — HackerRank</li><li>Developing Secure Software — Linux Foundation</li></ul>
       </div>
     </div>
   </section>
@@ -214,7 +229,7 @@
     <h2 class="footer__title">Building something worth<br>a production incident? <span class="accent">Let's talk.</span></h2>
 
     <div class="footer__row">
-      <a class="footer__email" href="mailto:[EMAIL]">[EMAIL]</a>
+      <a class="footer__email" href="mailto:kaniyawm@mcmaster.ca">kaniyawm@mcmaster.ca</a>
       <div class="footer__links">
         <a href="https://github.com/Mannpk18" target="_blank" rel="noopener">GitHub ↗</a>
         <a href="https://linkedin.com/in/mann-kaniyawala" target="_blank" rel="noopener">LinkedIn ↗</a>
